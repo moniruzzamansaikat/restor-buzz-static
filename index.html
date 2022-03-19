@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Restaurant Website</title>
+  </head>
+  <body>
+    <!-- start of navbar -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#">Restor<span>Buzz</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#offers">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#foods">Foods</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Restaurants</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">
+                <img src="./img/user.png" alt="" />
+                <span>Saikat</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- start of header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Fastest <span>Delivery</span> & Easy <span>Pickup</span></h1>
+            <div class="user">
+              <img src="./img/user.png" alt="user" />
+              <span
+                >When you are too lazy to cook, we are just a click away!</span
+              >
+            </div>
+            <div class="buttons">
+              <a href="#" class="btn me-3"
+                ><i class="fa-solid fa-magnifying-glass me-2"></i> Find
+                Restaurants
+              </a>
+              <a href="#" id="play-button">
+                <img src="./img/play.png" alt="" />
+                <span>How to order</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <img src="./img/food.png" alt="food" class="food-img" />
+            <div class="mt-5 features">
+              <div class="box mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box me-3">
+                    <i class="fa-solid fa-motorcycle"></i>
+                  </div>
+                  <div class="content-box">
+                    <h5 class="mb-2">Fast deliver</h5>
+                    <p>Promise to dliver within 30 minutes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box me-3">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </div>
+                  <div class="content-box">
+                    <h5 class="mb-2">Pick Up</h5>
+                    <p>Pickup delivery at your doorstep</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box me-3">
+                    <i class="fa-solid fa-utensils"></i>
+                  </div>
+                  <div class="content-box">
+                    <h5 class="mb-2">Dine in</h5>
+                    <p>Enjoy your food fresh and hot</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- offers section -->
+    <section id="offers"></section>
+    <!-- ebd of offers section -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

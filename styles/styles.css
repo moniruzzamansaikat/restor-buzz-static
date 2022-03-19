@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.btn {
+  -webkit-box-shadow: 0 0 0 !important;
+          box-shadow: 0 0 0 !important;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 0 0 !important;
+          box-shadow: 0 0 0 !important;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+nav.navbar {
+  padding: 0;
+}
+
+nav.navbar .container {
+  background: #000 !important;
+  padding: 1.5rem;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+nav.navbar .navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav.navbar .navbar-brand:hover {
+  color: #fff;
+}
+
+nav.navbar .navbar-brand span {
+  color: #fc4f4f;
+}
+
+nav.navbar a {
+  color: #f0f0f0 !important;
+}
+
+nav.navbar .nav-link {
+  margin: 0 1rem;
+  padding: 0 !important;
+  position: relative;
+}
+
+nav.navbar .nav-link.active::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #fc4f4f;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav.navbar .nav-link img {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.navbar .nav-link span {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+header {
+  padding: 5rem 0;
+  padding-top: 6rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+header h1 span {
+  color: #fc4f4f;
+}
+
+header .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+header .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header .user span {
+  font-weight: 600;
+  font-size: 0.9rem;
+  max-width: 300px;
+}
+
+header .buttons .btn {
+  background-color: #4f964f;
+  color: #f0f0f0;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+}
+
+header .buttons #play-button {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header .buttons #play-button img {
+  width: 55px;
+  margin-right: 7px;
+}
+
+header .food-img {
+  width: 300px;
+  margin-top: 50px;
+}
+
+header .box {
+  max-width: 240px;
+}
+
+header .box h5 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: "Playfair Display", serif;
+}
+
+header .box p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+header .box .icon-box {
+  width: 40px;
+  height: 40px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+header .features {
+  float: right;
+}
+/*# sourceMappingURL=styles.css.map */
