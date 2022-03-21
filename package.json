@@ -1,6 +1,10 @@
 {
   "name": "restaurant-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "author": {
+    "name": "Moniruzzaman Saikat",
+    "email": "saikat.moniruzzaman@gmail.com"
+  } 
 }
