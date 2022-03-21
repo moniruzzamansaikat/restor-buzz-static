@@ -53,7 +53,7 @@ section {
 // ###################################
 nav.navbar {
   padding: 0;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -276,10 +276,6 @@ section#offers {
 // FOODS
 // ###################################
 section#foods {
-  img {
-    max-width: 400px;
-  }
-
   .desc {
     h2 {
       color: $primary-color;

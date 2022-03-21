@@ -45,7 +45,6 @@ section .section_subtitle {
 
 nav.navbar {
   padding: 0;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -248,10 +247,6 @@ section#offers .card .btn {
 
 section#offers .card .btn:hover {
   opacity: 0.7;
-}
-
-section#foods img {
-  max-width: 400px;
 }
 
 section#foods .desc h2 {
