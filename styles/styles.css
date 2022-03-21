@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap");
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -14,12 +19,37 @@ body {
 }
 
 section {
-  margin: 2rem 0;
-  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+section .section_title {
+  font-family: "Roboto Serif", serif;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fc4f4f;
+}
+
+section .section_subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
 nav.navbar {
   padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 nav.navbar .container {
@@ -47,6 +77,10 @@ nav.navbar .navbar-brand span {
 
 nav.navbar a {
   color: #f0f0f0 !important;
+}
+
+nav.navbar i {
+  font-size: 1.5rem;
 }
 
 nav.navbar .nav-link {
@@ -84,11 +118,12 @@ nav.navbar .nav-link span {
 header {
   padding: 5rem 0;
   padding-top: 6rem;
+  margin-top: 100px;
 }
 
 header h1 {
   font-size: 4rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto Serif", serif;
   margin-bottom: 1.6rem;
   letter-spacing: 2px;
   font-weight: 700;
@@ -148,7 +183,7 @@ header .box {
 header .box h5 {
   font-size: 1.2rem;
   font-weight: 800;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto Serif", serif;
 }
 
 header .box p {
@@ -171,5 +206,90 @@ header .box .icon-box {
 
 header .features {
   float: right;
+}
+
+section#offers .card {
+  border: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 2rem 0;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+section#offers .card:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+section#offers .card h4 {
+  font-size: 2rem;
+  margin: 10px 0;
+  font-family: "Roboto Serif", serif;
+}
+
+section#offers .card p {
+  width: 260px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section#offers .card i {
+  font-size: 3rem;
+}
+
+section#offers .card .btn {
+  background-color: #fc4f4f;
+  border: 0;
+}
+
+section#offers .card .btn:hover {
+  opacity: 0.7;
+}
+
+section#foods img {
+  max-width: 400px;
+}
+
+section#foods .desc h2 {
+  color: #fc4f4f;
+  font-style: italic;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+
+section#foods .desc .btn {
+  background-color: #fc4f4f;
+  border-color: #fc4f4f;
+  border-radius: 30px;
+  margin-top: 5px;
+}
+
+section#foods .desc .btn:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    margin: 0.5rem 0 !important;
+    display: inline-block !important;
+  }
+  header {
+    text-align: center;
+  }
+  header .user {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  header .features {
+    float: none;
+  }
+  header .features * {
+    text-align: left !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

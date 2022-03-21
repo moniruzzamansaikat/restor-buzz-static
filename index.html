@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Restaurant Website</title>
   </head>
+
   <body>
     <!-- start of navbar -->
     <nav class="navbar navbar-expand-md">
@@ -35,7 +37,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars text-white"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto">
@@ -72,7 +74,7 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-up">
             <h1>Fastest <span>Delivery</span> & Easy <span>Pickup</span></h1>
             <div class="user">
               <img src="./img/user.png" alt="user" />
@@ -91,7 +93,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7" data-aos="fade-down">
             <img src="./img/food.png" alt="food" class="food-img" />
             <div class="mt-5 features">
               <div class="box mb-4">
@@ -100,7 +102,7 @@
                     <i class="fa-solid fa-motorcycle"></i>
                   </div>
                   <div class="content-box">
-                    <h5 class="mb-2">Fast deliver</h5>
+                    <h5 class="mb-2">Fast delivery</h5>
                     <p>Promise to dliver within 30 minutes</p>
                   </div>
                 </div>
@@ -135,9 +137,145 @@
     <!-- end of header -->
 
     <!-- offers section -->
-    <section id="offers"></section>
-    <!-- ebd of offers section -->
+    <section id="offers">
+      <div class="container">
+        <h2 class="section_title">Offers</h2>
+        <p class="section_subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+          commodi voluptatibus nam odio ut optio?
+        </p>
+
+        <div class="row my-5">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
+            <div class="card">
+              <div class="card-body">
+                <i data-vi="rocket"></i>
+                <h4>Baby</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, similique nulla sed soluta dolorum alias.
+                </p>
+                <a href="#" class="btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
+            <div class="card">
+              <div class="card-body">
+                <i data-vi="bulb"></i>
+                <h4>Regular</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, similique nulla sed soluta dolorum alias.
+                </p>
+                <a href="#" class="btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
+            <div class="card">
+              <div class="card-body">
+                <i data-vi="flame"></i>
+                <h4>Pro</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, similique nulla sed soluta dolorum alias.
+                </p>
+                <a href="#" class="btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of offers section -->
+
+    <!-- foods section -->
+    <section id="foods">
+      <div class="container">
+        <h2 class="section_title">Foods</h2>
+        <p class="section_subtitle">Latest foods from our restaurants</p>
+        <div class="row my-5">
+          <div class="col-md-6 my-3 text-center" data-aos="fade-right">
+            <img src="./img/foods/img1.png" alt="" class="img-fluid" />
+          </div>
+          <div
+            class="col-md-6 d-flex align-items-center px-5"
+            data-aos="fade-left"
+          >
+            <div class="desc">
+              <h2>PizzPuzz</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+                id?
+              </p>
+              <h3>10$</h3>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div
+            class="col-md-6 my-3 d-flex align-items-center px-5"
+            data-aos="fade-right"
+          >
+            <div class="desc">
+              <h2>CakeBuzz</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+                id?
+              </p>
+              <h3>10$</h3>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 text-center order-first order-md-last"
+            data-aos="fade-left"
+          >
+            <img src="./img/foods/img2.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-6 my-3 text-center" data-aos="fade-right">
+            <img src="./img/foods/img3.png" alt="" class="img-fluid" />
+          </div>
+          <div
+            class="col-md-6 d-flex align-items-center px-5"
+            data-aos="fade-left"
+          >
+            <div class="desc">
+              <h2>PepBurgs</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+                id?
+              </p>
+              <h3>10$</h3>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of foods section -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vivid-icons@1.0.10"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
