@@ -6,7 +6,7 @@ $primary-color: #fc4f4f;
 $title-font: 'Roboto Serif', serif;
 
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -53,7 +53,7 @@ section {
 // ###################################
 nav.navbar {
   padding: 0;
-  // position: fixed;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;

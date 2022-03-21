@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap");
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -45,6 +45,7 @@ section .section_subtitle {
 
 nav.navbar {
   padding: 0;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
