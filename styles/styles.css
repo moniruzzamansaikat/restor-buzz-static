@@ -19,7 +19,7 @@ body {
 }
 
 section {
-  margin-top: 4rem;
+  margin: 4rem 0 !important;
 }
 
 section .section_title {
@@ -266,6 +266,24 @@ section#foods .desc .btn {
 
 section#foods .desc .btn:hover {
   opacity: 0.7;
+}
+
+section#services .card {
+  border-radius: 0;
+  margin-bottom: 1.4rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section#services .card:hover {
+  -webkit-box-shadow: #b81c1c 5px 5px, #fc4949ee 10px 10px, #ff7171e1 15px 15px;
+          box-shadow: #b81c1c 5px 5px, #fc4949ee 10px 10px, #ff7171e1 15px 15px;
+}
+
+section#services .card h4 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {

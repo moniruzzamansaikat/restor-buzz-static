@@ -25,7 +25,7 @@ body {
 }
 
 section {
-  margin-top: 4rem;
+  margin: 4rem 0 !important;
 
   .section_title {
     font-family: $title-font;
@@ -299,6 +299,31 @@ section#foods {
 }
 // ###################################
 // END OF FOODS
+// ###################################
+
+// ###################################
+// SERVICES
+// ###################################
+section#services {
+  .card {
+    border-radius: 0;
+    margin-bottom: 1.4rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: #b81c1c 5px 5px, #fc4949ee 10px 10px, #ff7171e1 15px 15px;
+    }
+
+    h4 {
+      font-family: $title-font;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+  }
+}
+
+// ###################################
+// END OF SERVICES
 // ###################################
 
 // media
