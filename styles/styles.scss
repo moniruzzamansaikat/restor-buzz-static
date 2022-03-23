@@ -95,7 +95,8 @@ nav.navbar {
     padding: 0 !important;
     position: relative;
 
-    &.active {
+    &.active,
+    &:hover:not(.no-style) {
       &::after {
         position: absolute;
         content: '';
@@ -311,7 +312,9 @@ section#services {
     transition: 0.3s ease;
 
     &:hover {
-      box-shadow: #b81c1c 5px 5px, #fc4949ee 10px 10px, #ff7171e1 15px 15px;
+      box-shadow: rgba(247, 31, 49, 0.39) 0px 5px,
+        rgba(172, 24, 36, 0.3) 0px 10px, rgba(187, 16, 53, 0.103) 0px 15px,
+        rgba(173, 25, 25, 0.1) 0px 20px, rgba(240, 46, 46, 0.05) 0px 25px;
     }
 
     h4 {
@@ -321,9 +324,56 @@ section#services {
     }
   }
 }
-
 // ###################################
 // END OF SERVICES
+// ###################################
+
+// ###################################
+// RESTAURANTS
+// ###################################
+section#restaurants {
+  .row {
+    text-align: center !important;
+  }
+
+  .col-md-4 {
+    margin-bottom: 2rem;
+  }
+
+  img.main-img {
+    max-width: 300px;
+    margin-bottom: 12px;
+  }
+
+  img.sm-img {
+    width: 240px;
+  }
+
+  p.name {
+    font-size: 1.6rem;
+    color: $primary-color;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p.addr {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    background-color: $primary-color;
+    border: 0;
+    min-width: 100px;
+    border-radius: 0px 10px 0px 10px;
+    transition: 0.3s ease-in;
+
+    &:hover {
+      border-radius: 10px 0px 10px 0px;
+    }
+  }
+}
+// ###################################
+// END OF RESTAURANTS
 // ###################################
 
 // media
